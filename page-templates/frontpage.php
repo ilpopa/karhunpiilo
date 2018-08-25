@@ -46,8 +46,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- .row -->
 
-    </div><!-- Container end -->
-    <!-- Divide -->
+	</div><!-- Container end -->
+	<div class="container">
+		<div class="row">
+			<?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( 'kuvia-karhunpiilosta', 'slug' ); } ?>
+		</div>
+	</div>
+    <!-- Divide -
     <div class="container">
 		<div class="row">
 			<div class="col-md-12" style="visibility: visible; animation-name: fadeIn;">
@@ -55,21 +60,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
     </div>
-    <!-- Divide -->
+    <!- Divide 
     <div class="container">
 		<section>
 			<h2 class="section-heading text-center">Arvosteluja</h2>
 			<p class="section-description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
             
-            <?php echo do_shortcode( '[site_reviews count="2" pagination="ajax" class="arvio" id="jko5pkn1"]' ); ?>
+            <php echo do_shortcode( '[site_reviews count="2" pagination="ajax" class="arvio" id="jko5pkn1"]' ); ?>
             
             <div class="col-md-6 offset-md-3">
                 <h2 class="section-heading text-center">Arvostele Karhunpiilo</h2>
-                <?php echo do_shortcode( '[site_reviews_form]' ); ?>   
+                <php echo do_shortcode( '[site_reviews_form]' ); ?>   
             </div>         
 		</section>	
     </div>
-    <?php /*
+    <php /*
     $reviews = glsr_get_reviews([
 	"count"  => -1,
 	"rating" => 1,
@@ -79,7 +84,7 @@ foreach( $reviews as $review ) {
     echo $review->rating; 
     echo $review->content;
     echo $review->author;
-} */?>
+} */?> -->
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>

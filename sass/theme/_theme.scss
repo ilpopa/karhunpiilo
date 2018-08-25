@@ -1,10 +1,103 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-.fp-header .wrapper #wrapper-static-hero {
-    background-image: url('http://karhunpiilo.local/wp-content/uploads/2018/08/Karhunpiilo-paarakennus.jpg'); 
+//Import Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico');
+
+/*GLOBAL styles*/
+body {
+    font-family: $leipa !important;
+  }
+//Navbar
+.navbar-brand {
+    font-family: $karhufont;
+    color: $light;
+}
+// Slider Header
+.fp-header .carousel-item {
+    background-image: url('http://karhunpiilo.local/wp-content/uploads/2018/08/Karhunpiilo-cut.jpg');
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center;
-    height: 50vh;
+    height: 70vh;
+    padding:0;
+    h1 {
+        font-family: $karhufont;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50vh; 
+        color: $light;
+        font-size: 5rem;
+       }
+    .lead {
+    text-align: center;
+    color: $lightgreen;
+    }
+}
+.fp-header .carousel-item:nth-of-type(2) {
+    background-image: url('http://karhunpiilo.local/wp-content/uploads/2018/08/saunarakennus.jpg');  
+}
+.fp-header .carousel-item:nth-of-type(3) {
+    background-image: url('http://karhunpiilo.local/wp-content/uploads/2018/08/Karhunpiilon-ranta.jpg');  
+}
+
+//Static header
+.fp-header .wrapper {
+
+ #wrapper-static-hero {
+    background-image: url('http://karhunpiilo.local/wp-content/uploads/2018/08/Karhunpiilo-cut.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+    height: 70vh;
+    padding:0;  
+        h1 {
+         font-family: $karhufont;
+         text-align: center;
+         vertical-align: middle;
+         line-height: 60vh; 
+         color: $light;
+         font-size: 5rem;
+        }
+        .lead {
+         text-align: center;
+         color: $lightgreen;
+        }
+    }
+}
+.fp-jumbo {
+    background-color: transparent;
+}
+@media (max-width: 767px) { 
+
+    .fp-header .wrapper #wrapper-static-hero h1, .fp-header .carousel-item h1 {
+        font-size: 3rem;
+    }
+}
+
+.background-mask {
+    background-color: rgba(172, 171, 171, 0.6);
+    height: 100%;
+    position: relative;
+    padding: 20px 20px;
+    z-index: 2;
+}
+// Calender
+.datepick-inline {
+    border: none !important;
+}
+.datepick-inline .calendar-links {
+    background-color: $primary;
+    background-repeat: repeat-x;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#ddd)) !important;
+    background: -webkit-linear-gradient(top, $primary, #4bde8d) !important;
+    background: -moz-linear-gradient(top, $primary, #4bde8d) !important;
+    background: -ms-linear-gradient(top, $primary, #4bde8d) !important;
+    background: -o-linear-gradient(top, $primary, #4bde8d) !important;
+    border-bottom: 1px solid #aaa;
+}
+.datepick-inline .datepick-header {
+    color: #555;
+    font-weight: 600;
+    text-shadow: none !important;
 }
 //Reviews
 .glsr-reviews-wrap .nav-links {
@@ -63,4 +156,9 @@ button, input[type="button"], input[type="submit"] {
     text-shadow: none;
     -webkit-transition: background 0.2s;
     transition: background 0.2s;
+}
+//Footer
+#wrapper-footer-full, #wrapper-static-hero {
+    background-color: $primary;
+    color: #fff;
 }
