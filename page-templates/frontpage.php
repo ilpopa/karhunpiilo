@@ -45,9 +45,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'sidebar-templates/sidebar', 'right' ); ?>
 
 		</div><!-- .row -->
-
+		
 	</div><!-- Container end -->
-	<div class="container">
+	<!-- Full width front page area -->
+	<?php get_template_part( 'sidebar-templates/sidebar', 'frontpagefull' ); ?>
+	
+	<div class="container" id="kuvat">
+		<h2 class="gallery-header">Kuvia Karhunpiilosta</h2>
 		<div class="row">
 			<?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( 'kuvia-karhunpiilosta', 'slug' ); } ?>
 		</div>

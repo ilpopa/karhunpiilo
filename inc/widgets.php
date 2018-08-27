@@ -102,6 +102,16 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
+			'name'          => __( 'Front Page full', 'understrap' ),
+			'id'            => 'frontpagefull',
+			'description'   => 'Full sized Front page widget with dynamic grid',
+		    'before_widget'  => '<div id="%1$s" class="frontpagefull-widget %2$s '. understrap_slbd_count_widgets( 'frontpagefull' ) .'">', 
+		    'after_widget'   => '</div><!-- .frontpagefull-widget -->', 
+		    'before_title'   => '<h3 class="widget-title">', 
+		    'after_title'    => '</h3>', 
+		) );
+
+		register_sidebar( array(
 			'name'          => __( 'Footer Full', 'understrap' ),
 			'id'            => 'footerfull',
 			'description'   => 'Full sized footer widget with dynamic grid',

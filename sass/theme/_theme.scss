@@ -6,6 +6,13 @@
 body {
     font-family: $leipa !important;
   }
+h1.entry-title {
+    font-size: 3.5rem;
+    font-family: $karhufont;
+}
+h2, h3 {
+    color: $blue;
+}
 //Navbar
 .navbar-brand {
     font-family: $karhufont;
@@ -26,6 +33,11 @@ body {
         line-height: 50vh; 
         color: $light;
         font-size: 5rem;
+        text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;  
        }
     .lead {
     text-align: center;
@@ -66,14 +78,14 @@ body {
 .fp-jumbo {
     background-color: transparent;
 }
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 
     .fp-header .wrapper #wrapper-static-hero h1, .fp-header .carousel-item h1 {
         font-size: 3rem;
     }
 }
 
-.background-mask {
+.background-mask { //Lisää ekaan slideen tarvittaessa
     background-color: rgba(172, 171, 171, 0.6);
     height: 100%;
     position: relative;
@@ -81,6 +93,9 @@ body {
     z-index: 2;
 }
 // Calender
+.varaus-header {
+    text-align: center;
+}
 .datepick-inline {
     border: none !important;
 }
@@ -98,6 +113,45 @@ body {
     color: #555;
     font-weight: 600;
     text-shadow: none !important;
+}
+
+//Front page full width widget area
+.fp-full-wrapper {
+    background-color: $lightgreen;
+    padding: 0;
+    color: #fff;
+    h2 {
+        color: #fff;
+        padding-top:30px;
+    }
+}
+.fullwidth-bg {
+    background-image: url(http://karhunpiilo.local/wp-content/uploads/2018/08/saunalta-paarakennukselle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 250px;
+    padding: 0;
+    .overlay{
+        position:relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(172,171,171,.2);
+      }
+}
+.gallery-header {
+    font-weight: bold;
+    font-size: 3rem;
+    padding:30px;
+    text-align: center;
+}
+@media (max-width: 767px) { 
+
+    .gallery-header {
+        font-size: 2rem;
+    }
 }
 //Reviews
 .glsr-reviews-wrap .nav-links {
@@ -161,4 +215,10 @@ button, input[type="button"], input[type="submit"] {
 #wrapper-footer-full, #wrapper-static-hero {
     background-color: $primary;
     color: #fff;
+    .widget-title{
+        padding-top: 10px;
+    }
+    a {
+        color: $blue;
+    }
 }
