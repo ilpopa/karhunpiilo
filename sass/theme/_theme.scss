@@ -96,20 +96,16 @@ h2, h3 {
 .varaus-header {
     text-align: center;
 }
-.datepick-inline {
+.booking_form_div .datepick-inline {
     border: none !important;
 }
-.datepick-inline .calendar-links {
+.booking_form_div .datepick-inline .calendar-links {
     background-color: $primary;
     background-repeat: repeat-x;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#ddd)) !important;
-    background: -webkit-linear-gradient(top, $primary, #4bde8d) !important;
-    background: -moz-linear-gradient(top, $primary, #4bde8d) !important;
-    background: -ms-linear-gradient(top, $primary, #4bde8d) !important;
-    background: -o-linear-gradient(top, $primary, #4bde8d) !important;
+    background: $primary !important;
     border-bottom: 1px solid #aaa;
 }
-.datepick-inline .datepick-header {
+.booking_form_div .datepick-inline .datepick-header {
     color: #555;
     font-weight: 600;
     text-shadow: none !important;

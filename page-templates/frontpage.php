@@ -53,10 +53,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container" id="kuvat">
 		<h2 class="gallery-header">Kuvia Karhunpiilosta</h2>
 		<div class="row">
-			<?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( 'kuvia-karhunpiilosta', 'slug' ); } ?>
+			<?php echo do_shortcode( '[foogallery id="77"]' ); ?>
 		</div>
 	</div>
-    <!-- Divide -
+    <!-- Divide -<php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( 'kuvia-karhunpiilosta', 'slug' ); } ?>
     <div class="container">
 		<div class="row">
 			<div class="col-md-12" style="visibility: visible; animation-name: fadeIn;">
