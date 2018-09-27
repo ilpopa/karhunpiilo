@@ -53,7 +53,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container" id="kuvat">
 		<h2 class="gallery-header">Kuvia Karhunpiilosta</h2>
 		<div class="row">
-			<?php echo do_shortcode( '[foogallery id="77"]' ); ?>
+			<div class="col-md-12">
+				<?php echo do_shortcode( '[rl_gallery id="87"]' ); ?>
+			</div>
 		</div>
 	</div>
     <!-- Divide -<php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( 'kuvia-karhunpiilosta', 'slug' ); } ?>
