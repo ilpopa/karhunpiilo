@@ -20,7 +20,7 @@ h2, h3 {
 }
 // Slider Header
 .fp-header .carousel-item {
-    background-image: url('http://karhunpiilo.local/wp-content/uploads/2018/08/Karhunpiilo-cut.jpg');
+    background-image: url('../img/Karhunpiilo-cut.jpg');
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center;
@@ -45,17 +45,17 @@ h2, h3 {
     }
 }
 .fp-header .carousel-item:nth-of-type(2) {
-    background-image: url('http://karhunpiilo.local/wp-content/uploads/2018/08/saunarakennus.jpg');  
+    background-image: url('../img/saunarakennus.jpg');  
 }
 .fp-header .carousel-item:nth-of-type(3) {
-    background-image: url('http://karhunpiilo.local/wp-content/uploads/2018/08/Karhunpiilon-ranta.jpg');  
+    background-image: url('../img/Karhunpiilon-ranta.jpg');  
 }
 
 //Static header
 .fp-header .wrapper {
 
  #wrapper-static-hero {
-    background-image: url('http://karhunpiilo.local/wp-content/uploads/2018/08/Karhunpiilo-cut.jpg'); 
+    background-image: url('../img/Karhunpiilo-cut.jpg'); 
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center;
@@ -122,7 +122,7 @@ h2, h3 {
     }
 }
 .fullwidth-bg {
-    background-image: url(http://karhunpiilo.local/wp-content/uploads/2018/08/saunalta-paarakennukselle.jpg);
+    background-image: url(../img/saunalta-paarakennukselle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
